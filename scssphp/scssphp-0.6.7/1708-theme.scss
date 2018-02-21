@@ -1,0 +1,19 @@
+.background-blue,
+.background-green {
+color: #fff;
+}
+
+
+.background-blue {
+background: $op-blue;
+}
+
+
+.background-green {
+background: $op-teal;
+}
+
+.has-icons .wpb_single_image img {
+max-width: 60%;
+}
+

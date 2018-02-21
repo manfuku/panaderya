@@ -1,0 +1,99 @@
+/* compiled by scssphp v0.6.7 on Wed, 10 Jan 2018 03:16:01 +0100 (0.3095s) */
+
+ body { font-family:'Work Sans', 'Spectral', serif, serif; }
+
+ a:link,a:visited,a:hover { color:inherit; text-decoration:none; }
+
+ h1,h2 { font-weight:300; font-size:2.25rem; }
+
+ h3 { font-weight:700; }
+
+ strong,b { font-weight:700; }
+
+ .container { max-width:1200px; }
+
+ .container .row.align-items-center * { transition:all 0.3s cubic-bezier(0, 0, 0.2, 1); }
+
+ header#header { padding-top:1rem; padding-bottom:1rem; position:fixed; top:0; width:100%; background:rgba(221, 0, 0, 0.98); color:#fff; z-index:2; height:3.75rem; }
+
+ header#header .align-items-center > * > * { margin-bottom:0; }
+
+ header#header #branding { font-weight:700; }
+
+ .menu-toggle { float:left; cursor:pointer; }
+
+ /* NAVIGATION */ /* IMPORT */ @media (max-width:992px) { nav#menu { position:fixed; top:3.75rem; bottom:0; background:#00a99d; padding-top:0.5rem; padding-bottom:0.5rem; overflow:auto; }
+
+ }
+
+ nav#menu .menu-primary-container { width:100%; }
+
+ nav#menu .menu-primary-container ul.menu { padding:0; margin:0; list-style:none; }
+
+ @media (max-width:992px) { nav#menu .menu-primary-container ul.menu { overflow:auto; /* margin-top: 1rem;
+ border-top: 1px #000 solid;
+ padding-top: 1rem; */ }
+
+ }
+
+ nav#menu .menu-primary-container ul.menu > li { display:block; }
+
+ @media (min-width:992px) { nav#menu .menu-primary-container ul.menu > li { margin-left:0.75rem; display:inline; float:left; }
+
+ }
+
+ nav#menu .menu-primary-container ul.menu > li > a { padding-top:0.5rem; padding-bottom:0.5rem; display:inline-block; opacity:0.5; transition:all 0.3s cubic-bezier(0, 0, 0.2, 1); }
+
+ nav#menu .menu-primary-container ul.menu > li > a:hover { opacity:1; }
+
+ nav#menu .menu-primary-container ul.menu > li.current-menu-item a { opacity:1; }
+
+ /* MAIN */ /* IMPORT */ /* @mixin border-radius($radius) {
+ border-radius: $radius;
+ } */ main#container > #content { margin-top:3.75rem; }
+
+ header.header .entry-title { display:none; }
+
+ header.row { padding-top:7.5rem; padding-bottom:7.5rem; border-bottom:1px rgba(0, 0, 0, 0.25) dashed; text-transform:capitalize; }
+
+ .entry-content > .vc_empty-placeholder { position:absolute; }
+
+ .entry-content > .vc_row,.entry-content > .vc_vc_row > .vc_row { padding-top:5rem; padding-bottom:4rem; border-bottom:1px rgba(0, 0, 0, 0.25) dashed; }
+
+ .entry-content > .vc_row[data-vc-full-width],.entry-content > .vc_vc_row > .vc_row[data-vc-full-width] { /* background: darken(white,15);  */ border-bottom:1px rgba(0, 0, 0, 0.25) dashed; }
+
+ .entry-content > .vc_row[data-vc-parallax-image],.entry-content > .vc_vc_row > .vc_row[data-vc-parallax-image] { color:#fff; border:none; }
+
+ @media (min-width:768px) and (max-width:991px) { .entry-content > .vc_row .vc_col-sm-3,.entry-content > .vc_vc_row > .vc_row .vc_col-sm-3 { width:50%; }
+
+ }
+
+ .entry-content > .vc_row .vc_inline-link,.entry-content > .vc_vc_row > .vc_row .vc_inline-link { font-weight:700; font-weight:700; }
+
+ .entry-content > .vc_row .wpb_column,.entry-content > .vc_vc_row > .vc_row .wpb_column { transition:all 0.3s cubic-bezier(0, 0, 0.2, 1); /* @media (min-width: 768px) {
+ &:nth-child(1) { background: yellow; }
+ &:nth-child(2) { background: blue;
+ .wpb_content_element { 
+ //TESTER
+ &:nth-child(odd) { background: orange; color: set-color-dynamic(orange); }
+ &:nth-child(even) { background: red; color: set-color-dynamic(red); }	
+ }
+ }
+ &:nth-child(3) { background: lime; }
+ &:nth-child(4) { background: maroon; }
+ } */ }
+
+ .entry-content > .vc_row .wpb_column .wpb_wrapper .wpb_content_element,.entry-content > .vc_vc_row > .vc_row .wpb_column .wpb_wrapper .wpb_content_element { margin-bottom:0; border-bottom:1rem #d00 solid; /* //TESTER
+ @media (min-width: 768px) {
+ &:nth-child(odd) { background: teal; color: set-color-dynamic(teal); }
+ &:nth-child(eveen) { background: orange; color: set-color-dynamic(orange); }
+ } */ /* @media (min-width: 992px)  {
+ &:last-child:not(:only-child) {
+ margin-bottom: 0;
+ }
+ } */ }
+
+ /* FOOTER */ footer#footer { padding-top:5rem; padding-bottom:5rem; }
+
+ img { filter:grayscale(100%); }
+

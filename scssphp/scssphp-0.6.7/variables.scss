@@ -1,0 +1,49 @@
+//TYPOGRAPHY
+$font-cjk:    			'Microsoft YaHei', 'STXihei';
+$font-base:    			'Source Sans Pro', 'Noto Sans', $font-cjk, serif;
+$font-primary:			'Work Sans', $font-cjk, serif;
+$font-monospace:		'Roboto Mono', $font-cjk, monospace;
+$font-condensed:		'Roboto Condensed', $font-cjk, monospace;
+
+$font-weight-bold:		700;
+$h1:					24px; //BOOTSTRAP OVERRIDE
+
+//COLORS
+$color-white:			#fff;
+$color-black:			#000;
+$color-red:				#d50000;
+$color-green:			#689F38;
+$color-gray:			#9E9E9E;
+
+$op-blue: 				#3E8FDE;
+$op-green: 				#144732;
+
+$color-primary: 		darken($op-blue,10);
+$color-primary-dark:	darken($color-primary,20);
+
+$color-secondary:		$op-green;
+
+$background-gradient-primary:	linear-gradient(to left, #24c6dc, #514a9d); 
+//$background-gradient-primary:	linear-gradient(to right, saturate($op-blue,50), darken($op-blue,20)); 
+
+
+//MISC
+$transition:			all 0.3s cubic-bezier(0, 0, 0.2, 1);
+
+$border:				1px darken($color-white,15%) solid; 
+$border-radius:			5px; 
+$border-radius:			5px; 
+
+$box-shadow:			0 2px 5px rgba($color-black,0.05);
+$box-shadow:			0 2px 5px rgba($color-black,0.1);
+
+$sidebar-width:			calc(100vw - 60px);
+$sidebar-width-desktop:	15rem;
+$sidebar-width-desktop:	20rem;
+
+$header-height:			4rem;
+
+$mxw-md:				768px;
+
+$mnw-md:				768px;
+$mnw-lg:				992px;

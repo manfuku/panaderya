@@ -1,0 +1,41 @@
+/* @import 'op-box.scss'; */
+	.op-box {
+	background: $color-white;
+	margin-bottom: 1rem;
+		> .row {
+		border-bottom: $border;
+		padding-bottom: 1rem;
+		margin-bottom: 1rem;
+			&:first-child {
+			padding-bottom: 1rem;
+			}
+			&:last-child {
+			border-bottom: none;
+			margin-bottom: 0;
+			}
+		}
+		@media (min-width: 576px) {
+		border-radius: $border-radius;
+		}
+		.op-box__header, .op-box-header	{
+		color: $color-primary;
+		padding: 1rem 0;
+		align-items: center;
+			> * > *,
+			.col * {
+			margin-bottom: 0;
+			}
+			.btn {
+			margin-bottom: 0;
+			}
+			
+		}
+		//.op-box__body,
+		.op-toolbar {
+		padding-bottom: 0.5rem;
+			> * > * {
+			margin-bottom: 0.5rem;
+			}
+		
+		}
+	}

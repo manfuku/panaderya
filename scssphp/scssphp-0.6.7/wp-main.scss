@@ -1,0 +1,121 @@
+/* IMPORT */
+
+
+/* @mixin border-radius($radius) {
+border-radius: $radius;
+} */
+
+
+main#container > #content {
+margin-top: $header-height;
+}
+
+
+header {
+
+	&.header {
+	//display: none;
+
+		.entry-title {
+		display: none;
+		}
+	}
+	&.row {
+	padding-top: $section-padding * 1.5;
+	padding-bottom: $section-padding * 1.5;
+	
+	//background: lighten($color-primary,15); 
+	border-bottom: $guide-border;
+	text-transform: capitalize;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+.entry-content {
+	
+	> .vc_empty-placeholder {
+	position: absolute;
+	}
+	
+	> .vc_row,
+	> .vc_vc_row > .vc_row {
+	padding-top: $section-padding;
+	padding-bottom: $section-padding - 1rem;
+	//padding-bottom: $section-padding;
+	border-bottom: $guide-border;
+		
+		&[data-vc-full-width] {
+		/* background: darken(white,15);  */
+		border-bottom: $guide-border;
+		}
+		
+		&[data-vc-parallax-image] {
+		color: #fff;
+		border: none;
+		}
+		
+		@media (min-width: 768px) and (max-width: 991px) {
+			.vc_col-sm-3 {
+			width: 50%;
+			}
+			
+		}
+		
+		.vc_inline-link {
+		font-weight: $font-weight-bold;
+		font-weight: 700;
+		}
+		
+		.wpb_column {
+		transition: $transition;
+		
+			.wpb_wrapper  {
+			
+				.wpb_content_element {
+				//margin-bottom: 1rem;
+				margin-bottom: 0; border-bottom: 1rem $color-primary solid;	
+					/* //TESTER
+					@media (min-width: 768px) {
+					&:nth-child(odd) { background: teal; color: set-color-dynamic(teal); }
+					&:nth-child(eveen) { background: orange; color: set-color-dynamic(orange); }
+					} */
+					
+					/* @media (min-width: 992px)  {
+						&:last-child:not(:only-child) {
+						margin-bottom: 0;
+						}
+					} */
+					
+				}
+			}
+			
+			/* @media (min-width: 768px) {
+			&:nth-child(1) { background: yellow; }
+			&:nth-child(2) { background: blue;
+				
+					.wpb_content_element { 
+					//TESTER
+					&:nth-child(odd) { background: orange; color: set-color-dynamic(orange); }
+					&:nth-child(even) { background: red; color: set-color-dynamic(red); }	
+					}
+				
+				}
+			&:nth-child(3) { background: lime; }
+			&:nth-child(4) { background: maroon; }
+
+			} */
+		
+		}
+		
+
+	}
+
+}
